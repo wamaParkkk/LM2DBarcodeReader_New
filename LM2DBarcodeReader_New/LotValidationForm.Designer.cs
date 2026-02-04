@@ -54,6 +54,9 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.lblSummary = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.liveviewForm1 = new Keyence.AutoID.SDK.LiveviewForm();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_2DID_Read = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlTag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUnit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUnit2)).BeginInit();
@@ -125,7 +128,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Navy;
-            this.label6.Location = new System.Drawing.Point(305, 9);
+            this.label6.Location = new System.Drawing.Point(591, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 35);
             this.label6.TabIndex = 711;
@@ -138,7 +141,7 @@
             this.textBoxUnit1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxUnit1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUnit1.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUnit1.Location = new System.Drawing.Point(310, 47);
+            this.textBoxUnit1.Location = new System.Drawing.Point(596, 47);
             this.textBoxUnit1.Name = "textBoxUnit1";
             this.textBoxUnit1.Size = new System.Drawing.Size(280, 33);
             this.textBoxUnit1.TabIndex = 713;
@@ -151,7 +154,7 @@
             this.textBoxUnit2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxUnit2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUnit2.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUnit2.Location = new System.Drawing.Point(596, 47);
+            this.textBoxUnit2.Location = new System.Drawing.Point(882, 47);
             this.textBoxUnit2.Name = "textBoxUnit2";
             this.textBoxUnit2.Size = new System.Drawing.Size(280, 33);
             this.textBoxUnit2.TabIndex = 715;
@@ -162,7 +165,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(591, 9);
+            this.label3.Location = new System.Drawing.Point(877, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 35);
             this.label3.TabIndex = 714;
@@ -175,7 +178,7 @@
             this.textBoxUnit3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxUnit3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUnit3.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUnit3.Location = new System.Drawing.Point(882, 47);
+            this.textBoxUnit3.Location = new System.Drawing.Point(310, 390);
             this.textBoxUnit3.Name = "textBoxUnit3";
             this.textBoxUnit3.Size = new System.Drawing.Size(280, 33);
             this.textBoxUnit3.TabIndex = 717;
@@ -186,7 +189,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(877, 9);
+            this.label4.Location = new System.Drawing.Point(305, 352);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 35);
             this.label4.TabIndex = 716;
@@ -199,7 +202,7 @@
             this.textBoxUnit4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxUnit4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUnit4.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUnit4.Location = new System.Drawing.Point(310, 390);
+            this.textBoxUnit4.Location = new System.Drawing.Point(596, 390);
             this.textBoxUnit4.Name = "textBoxUnit4";
             this.textBoxUnit4.Size = new System.Drawing.Size(280, 33);
             this.textBoxUnit4.TabIndex = 719;
@@ -210,7 +213,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(305, 352);
+            this.label5.Location = new System.Drawing.Point(591, 352);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 35);
             this.label5.TabIndex = 718;
@@ -223,7 +226,7 @@
             this.textBoxUnit5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxUnit5.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUnit5.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUnit5.Location = new System.Drawing.Point(596, 390);
+            this.textBoxUnit5.Location = new System.Drawing.Point(882, 390);
             this.textBoxUnit5.Name = "textBoxUnit5";
             this.textBoxUnit5.Size = new System.Drawing.Size(280, 33);
             this.textBoxUnit5.TabIndex = 721;
@@ -234,7 +237,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(591, 352);
+            this.label7.Location = new System.Drawing.Point(877, 352);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 35);
             this.label7.TabIndex = 720;
@@ -244,7 +247,7 @@
             // dataGridViewUnit1
             // 
             this.dataGridViewUnit1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUnit1.Location = new System.Drawing.Point(310, 99);
+            this.dataGridViewUnit1.Location = new System.Drawing.Point(596, 99);
             this.dataGridViewUnit1.Name = "dataGridViewUnit1";
             this.dataGridViewUnit1.RowTemplate.Height = 23;
             this.dataGridViewUnit1.Size = new System.Drawing.Size(280, 250);
@@ -253,7 +256,7 @@
             // dataGridViewUnit2
             // 
             this.dataGridViewUnit2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUnit2.Location = new System.Drawing.Point(596, 99);
+            this.dataGridViewUnit2.Location = new System.Drawing.Point(882, 99);
             this.dataGridViewUnit2.Name = "dataGridViewUnit2";
             this.dataGridViewUnit2.RowTemplate.Height = 23;
             this.dataGridViewUnit2.Size = new System.Drawing.Size(280, 250);
@@ -262,7 +265,7 @@
             // dataGridViewUnit3
             // 
             this.dataGridViewUnit3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUnit3.Location = new System.Drawing.Point(882, 99);
+            this.dataGridViewUnit3.Location = new System.Drawing.Point(310, 442);
             this.dataGridViewUnit3.Name = "dataGridViewUnit3";
             this.dataGridViewUnit3.RowTemplate.Height = 23;
             this.dataGridViewUnit3.Size = new System.Drawing.Size(280, 250);
@@ -271,7 +274,7 @@
             // dataGridViewUnit4
             // 
             this.dataGridViewUnit4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUnit4.Location = new System.Drawing.Point(310, 442);
+            this.dataGridViewUnit4.Location = new System.Drawing.Point(596, 442);
             this.dataGridViewUnit4.Name = "dataGridViewUnit4";
             this.dataGridViewUnit4.RowTemplate.Height = 23;
             this.dataGridViewUnit4.Size = new System.Drawing.Size(280, 250);
@@ -280,7 +283,7 @@
             // dataGridViewUnit5
             // 
             this.dataGridViewUnit5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUnit5.Location = new System.Drawing.Point(596, 442);
+            this.dataGridViewUnit5.Location = new System.Drawing.Point(882, 442);
             this.dataGridViewUnit5.Name = "dataGridViewUnit5";
             this.dataGridViewUnit5.RowTemplate.Height = 23;
             this.dataGridViewUnit5.Size = new System.Drawing.Size(280, 250);
@@ -288,15 +291,16 @@
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnReset.BackColor = System.Drawing.Color.Gold;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReset.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Navy;
-            this.btnReset.Location = new System.Drawing.Point(882, 636);
+            this.btnReset.Location = new System.Drawing.Point(882, 698);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(100, 56);
+            this.btnReset.Size = new System.Drawing.Size(280, 47);
             this.btnReset.TabIndex = 735;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "2DID Info clear";
             this.btnReset.UseVisualStyleBackColor = false;
             // 
             // lblSummary
@@ -315,15 +319,59 @@
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Location = new System.Drawing.Point(301, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3, 653);
+            this.panel1.Size = new System.Drawing.Size(3, 646);
             this.panel1.TabIndex = 737;
+            // 
+            // liveviewForm1
+            // 
+            this.liveviewForm1.BackColor = System.Drawing.Color.Black;
+            this.liveviewForm1.BinningType = Keyence.AutoID.SDK.LiveviewForm.ImageBinningType.OneQuarter;
+            this.liveviewForm1.ImageFormat = Keyence.AutoID.SDK.LiveviewForm.ImageFormatType.Jpeg;
+            this.liveviewForm1.ImageQuality = 5;
+            this.liveviewForm1.IpAddress = "192.168.100.100";
+            this.liveviewForm1.Location = new System.Drawing.Point(310, 47);
+            this.liveviewForm1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.liveviewForm1.Name = "liveviewForm1";
+            this.liveviewForm1.PullTimeSpan = 100;
+            this.liveviewForm1.Size = new System.Drawing.Size(280, 302);
+            this.liveviewForm1.TabIndex = 738;
+            this.liveviewForm1.TimeoutMs = 2000;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Navy;
+            this.label8.Location = new System.Drawing.Point(305, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(280, 35);
+            this.label8.TabIndex = 739;
+            this.label8.Text = "Camera live view";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btn_2DID_Read
+            // 
+            this.btn_2DID_Read.BackColor = System.Drawing.Color.White;
+            this.btn_2DID_Read.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_2DID_Read.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_2DID_Read.ForeColor = System.Drawing.Color.Navy;
+            this.btn_2DID_Read.Location = new System.Drawing.Point(310, 698);
+            this.btn_2DID_Read.Name = "btn_2DID_Read";
+            this.btn_2DID_Read.Size = new System.Drawing.Size(280, 47);
+            this.btn_2DID_Read.TabIndex = 740;
+            this.btn_2DID_Read.Tag = "0";
+            this.btn_2DID_Read.Text = "Read";
+            this.btn_2DID_Read.UseVisualStyleBackColor = false;
+            this.btn_2DID_Read.Click += new System.EventHandler(this.btn_2DID_Read_Click);
             // 
             // LotValidationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1180, 737);
+            this.ClientSize = new System.Drawing.Size(1180, 757);
+            this.Controls.Add(this.btn_2DID_Read);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.liveviewForm1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblSummary);
             this.Controls.Add(this.btnReset);
@@ -388,5 +436,8 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label lblSummary;
         private System.Windows.Forms.Panel panel1;
+        public Keyence.AutoID.SDK.LiveviewForm liveviewForm1;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Button btn_2DID_Read;
     }
 }

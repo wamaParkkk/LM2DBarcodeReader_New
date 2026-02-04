@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Windows.Forms;
+using Keyence.AutoID.SDK;
 
 namespace LM2DBarcodeReader_New
 {
@@ -33,9 +34,15 @@ namespace LM2DBarcodeReader_New
         
         private DataTable _dtAl;
 
+        int module;
+        string ModuleName;
+
         public LotValidationForm()
         {
             InitializeComponent();
+
+            module = (int)MODULE._PM1;
+            ModuleName = "PM1";
 
             // 1) Unit 배열 준비
             _unitTextBoxes = new[] { textBoxUnit1, textBoxUnit2, textBoxUnit3, textBoxUnit4, textBoxUnit5 };
@@ -77,6 +84,34 @@ namespace LM2DBarcodeReader_New
                 this.StartPosition = FormStartPosition.CenterScreen;
             }*/
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            if (Global.DEVICE_LOAD())
+            {
+                setLiveview();
+            }
+            else
+            {
+                MessageBox.Show("바코드 리더기가 연결되지 않았습니다", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void setLiveview()
+        {
+            string key = string.Format("{0}/SR-X300W/READER", Define.sIPAddress);
+            ReaderSearchResult res = getSearchResultFromKey(key);
+            liveviewForm1.EndReceive();
+            liveviewForm1.IpAddress = res.IpAddress;
+            liveviewForm1.BeginReceive();
+        }
+
+        private ReaderSearchResult getSearchResultFromKey(string key)
+        {
+            String[] readerInfo = key.Split('/');
+            if (readerInfo.Length == 3)
+            {
+                return new ReaderSearchResult(readerInfo[1], readerInfo[2], readerInfo[0]);
+            }
+            return new ReaderSearchResult();
         }
 
         private void InitGrids()
@@ -473,6 +508,22 @@ namespace LM2DBarcodeReader_New
             byte[] bytes = Encoding.UTF8.GetBytes(strData);
             foreach (var b in bytes) sb.Append(b.ToString("X2"));
             return sb.ToString();
+        }
+
+        private void btn_2DID_Read_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            string strTmp = btn.Text.ToString();
+            switch (strTmp)
+            {
+                case "Read":
+                    {
+                        Define.seqMode[module] = Define.MODE_PROCESS;
+                        Define.seqCtrl[module] = Define.CTRL_RUN;
+                        Define.seqSts[module] = Define.STS_IDLE;
+                    }
+                    break;
+            }
         }
     }
 }

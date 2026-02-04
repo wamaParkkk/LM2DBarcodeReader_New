@@ -34,24 +34,6 @@ namespace LM2DBarcodeReader_New
             this.timerDisplay = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.Tray_Icon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.context_TrayIcon = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBoxLotValidation = new System.Windows.Forms.PictureBox();
-            this.btnLotValidation = new System.Windows.Forms.Button();
-            this.pictureBoxConfigure = new System.Windows.Forms.PictureBox();
-            this.btnConfigure = new System.Windows.Forms.Button();
-            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
-            this.btnMaintnance = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnGuide = new System.Windows.Forms.Button();
             this.pictureBoxUserGuide = new System.Windows.Forms.PictureBox();
@@ -61,21 +43,39 @@ namespace LM2DBarcodeReader_New
             this.labelPageName = new System.Windows.Forms.Label();
             this.laTime = new System.Windows.Forms.Label();
             this.laDate = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBoxLotValidation = new System.Windows.Forms.PictureBox();
+            this.btnLotValidation = new System.Windows.Forms.Button();
+            this.pictureBoxConfigure = new System.Windows.Forms.PictureBox();
+            this.btnConfigure = new System.Windows.Forms.Button();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
+            this.btnMaintnance = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.Tray_Icon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.context_TrayIcon = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserGuide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEventLog)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.context_TrayIcon.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLotValidation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfigure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserGuide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEventLog)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.context_TrayIcon.SuspendLayout();
             this.SuspendLayout();
             // 
             // timerDisplay
@@ -100,220 +100,6 @@ namespace LM2DBarcodeReader_New
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1005, 100);
             this.panel4.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panelLogo);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(276, 100);
-            this.panel2.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 924);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1280, 100);
-            this.panel9.TabIndex = 38;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(1194, 100);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(86, 824);
-            this.panel7.TabIndex = 40;
-            // 
-            // Tray_Icon
-            // 
-            this.Tray_Icon.Icon = ((System.Drawing.Icon)(resources.GetObject("Tray_Icon.Icon")));
-            this.Tray_Icon.Text = "PCB Lid 2D Barcode reader";
-            this.Tray_Icon.Visible = true;
-            this.Tray_Icon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Tray_Icon_MouseDoubleClick);
-            // 
-            // context_TrayIcon
-            // 
-            this.context_TrayIcon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.context_TrayIcon.Name = "context_TrayIcon";
-            this.context_TrayIcon.Size = new System.Drawing.Size(105, 48);
-            // 
-            // showToolStripMenuItem
-            // 
-            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.showToolStripMenuItem.Text = "Show";
-            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(86, 824);
-            this.panel8.TabIndex = 41;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 100);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(22, 824);
-            this.panel6.TabIndex = 39;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Controls.Add(this.pictureBoxLotValidation);
-            this.panel10.Controls.Add(this.btnLotValidation);
-            this.panel10.Controls.Add(this.pictureBoxConfigure);
-            this.panel10.Controls.Add(this.btnConfigure);
-            this.panel10.Controls.Add(this.pictureBoxExit);
-            this.panel10.Controls.Add(this.pictureBoxMain);
-            this.panel10.Controls.Add(this.btnMaintnance);
-            this.panel10.Controls.Add(this.btnExit);
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1286, 106);
-            this.panel10.TabIndex = 34;
-            // 
-            // pictureBoxLotValidation
-            // 
-            this.pictureBoxLotValidation.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLotValidation.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.Validation;
-            this.pictureBoxLotValidation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLotValidation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLotValidation.Location = new System.Drawing.Point(498, 45);
-            this.pictureBoxLotValidation.Name = "pictureBoxLotValidation";
-            this.pictureBoxLotValidation.Size = new System.Drawing.Size(42, 42);
-            this.pictureBoxLotValidation.TabIndex = 736;
-            this.pictureBoxLotValidation.TabStop = false;
-            this.pictureBoxLotValidation.Click += new System.EventHandler(this.btnLotValidation_Click);
-            // 
-            // btnLotValidation
-            // 
-            this.btnLotValidation.BackColor = System.Drawing.Color.Transparent;
-            this.btnLotValidation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLotValidation.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLotValidation.ForeColor = System.Drawing.Color.White;
-            this.btnLotValidation.Location = new System.Drawing.Point(539, 45);
-            this.btnLotValidation.Name = "btnLotValidation";
-            this.btnLotValidation.Size = new System.Drawing.Size(132, 42);
-            this.btnLotValidation.TabIndex = 735;
-            this.btnLotValidation.Text = "Lot validation";
-            this.btnLotValidation.UseVisualStyleBackColor = false;
-            this.btnLotValidation.Click += new System.EventHandler(this.btnLotValidation_Click);
-            // 
-            // pictureBoxConfigure
-            // 
-            this.pictureBoxConfigure.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxConfigure.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.ConfigButton;
-            this.pictureBoxConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxConfigure.Location = new System.Drawing.Point(677, 45);
-            this.pictureBoxConfigure.Name = "pictureBoxConfigure";
-            this.pictureBoxConfigure.Size = new System.Drawing.Size(42, 42);
-            this.pictureBoxConfigure.TabIndex = 43;
-            this.pictureBoxConfigure.TabStop = false;
-            this.pictureBoxConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
-            // 
-            // btnConfigure
-            // 
-            this.btnConfigure.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfigure.FlatAppearance.BorderSize = 0;
-            this.btnConfigure.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConfigure.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfigure.ForeColor = System.Drawing.Color.White;
-            this.btnConfigure.Location = new System.Drawing.Point(718, 45);
-            this.btnConfigure.Name = "btnConfigure";
-            this.btnConfigure.Size = new System.Drawing.Size(111, 42);
-            this.btnConfigure.TabIndex = 42;
-            this.btnConfigure.Text = "Configure";
-            this.btnConfigure.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnConfigure.UseVisualStyleBackColor = false;
-            this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
-            // 
-            // pictureBoxExit
-            // 
-            this.pictureBoxExit.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxExit.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.ExitButton;
-            this.pictureBoxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExit.Location = new System.Drawing.Point(962, 45);
-            this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(42, 42);
-            this.pictureBoxExit.TabIndex = 39;
-            this.pictureBoxExit.TabStop = false;
-            this.pictureBoxExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // pictureBoxMain
-            // 
-            this.pictureBoxMain.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxMain.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.Maint;
-            this.pictureBoxMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxMain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxMain.Location = new System.Drawing.Point(340, 45);
-            this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(42, 42);
-            this.pictureBoxMain.TabIndex = 35;
-            this.pictureBoxMain.TabStop = false;
-            this.pictureBoxMain.Click += new System.EventHandler(this.btnMain_Click);
-            // 
-            // btnMaintnance
-            // 
-            this.btnMaintnance.BackColor = System.Drawing.Color.Transparent;
-            this.btnMaintnance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMaintnance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaintnance.FlatAppearance.BorderSize = 0;
-            this.btnMaintnance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMaintnance.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaintnance.ForeColor = System.Drawing.Color.White;
-            this.btnMaintnance.Location = new System.Drawing.Point(381, 45);
-            this.btnMaintnance.Name = "btnMaintnance";
-            this.btnMaintnance.Size = new System.Drawing.Size(111, 42);
-            this.btnMaintnance.TabIndex = 33;
-            this.btnMaintnance.Text = "Process";
-            this.btnMaintnance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnMaintnance.UseVisualStyleBackColor = false;
-            this.btnMaintnance.Click += new System.EventHandler(this.btnMain_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(1003, 45);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(111, 42);
-            this.btnExit.TabIndex = 31;
-            this.btnExit.Text = "Exit";
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel5
             // 
@@ -448,6 +234,14 @@ namespace LM2DBarcodeReader_New
             this.laDate.TabIndex = 147;
             this.laDate.Text = "0000.00.00";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panelLogo);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(276, 100);
+            this.panel2.TabIndex = 0;
+            // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
@@ -458,6 +252,213 @@ namespace LM2DBarcodeReader_New
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(276, 100);
             this.panelLogo.TabIndex = 18;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 924);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1280, 100);
+            this.panel9.TabIndex = 38;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Controls.Add(this.pictureBoxLotValidation);
+            this.panel10.Controls.Add(this.btnLotValidation);
+            this.panel10.Controls.Add(this.pictureBoxConfigure);
+            this.panel10.Controls.Add(this.btnConfigure);
+            this.panel10.Controls.Add(this.pictureBoxExit);
+            this.panel10.Controls.Add(this.pictureBoxMain);
+            this.panel10.Controls.Add(this.btnMaintnance);
+            this.panel10.Controls.Add(this.btnExit);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1286, 106);
+            this.panel10.TabIndex = 34;
+            // 
+            // pictureBoxLotValidation
+            // 
+            this.pictureBoxLotValidation.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLotValidation.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.Validation;
+            this.pictureBoxLotValidation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLotValidation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLotValidation.Location = new System.Drawing.Point(498, 45);
+            this.pictureBoxLotValidation.Name = "pictureBoxLotValidation";
+            this.pictureBoxLotValidation.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxLotValidation.TabIndex = 736;
+            this.pictureBoxLotValidation.TabStop = false;
+            this.pictureBoxLotValidation.Click += new System.EventHandler(this.btnLotValidation_Click);
+            // 
+            // btnLotValidation
+            // 
+            this.btnLotValidation.BackColor = System.Drawing.Color.Transparent;
+            this.btnLotValidation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLotValidation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLotValidation.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLotValidation.ForeColor = System.Drawing.Color.White;
+            this.btnLotValidation.Location = new System.Drawing.Point(539, 45);
+            this.btnLotValidation.Name = "btnLotValidation";
+            this.btnLotValidation.Size = new System.Drawing.Size(132, 42);
+            this.btnLotValidation.TabIndex = 735;
+            this.btnLotValidation.Text = "Lot validation";
+            this.btnLotValidation.UseVisualStyleBackColor = false;
+            this.btnLotValidation.Click += new System.EventHandler(this.btnLotValidation_Click);
+            // 
+            // pictureBoxConfigure
+            // 
+            this.pictureBoxConfigure.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxConfigure.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.ConfigButton;
+            this.pictureBoxConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxConfigure.Location = new System.Drawing.Point(677, 45);
+            this.pictureBoxConfigure.Name = "pictureBoxConfigure";
+            this.pictureBoxConfigure.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxConfigure.TabIndex = 43;
+            this.pictureBoxConfigure.TabStop = false;
+            this.pictureBoxConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
+            // 
+            // btnConfigure
+            // 
+            this.btnConfigure.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfigure.FlatAppearance.BorderSize = 0;
+            this.btnConfigure.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConfigure.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfigure.ForeColor = System.Drawing.Color.White;
+            this.btnConfigure.Location = new System.Drawing.Point(718, 45);
+            this.btnConfigure.Name = "btnConfigure";
+            this.btnConfigure.Size = new System.Drawing.Size(111, 42);
+            this.btnConfigure.TabIndex = 42;
+            this.btnConfigure.Text = "Configure";
+            this.btnConfigure.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnConfigure.UseVisualStyleBackColor = false;
+            this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxExit.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.ExitButton;
+            this.pictureBoxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExit.Location = new System.Drawing.Point(962, 45);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxExit.TabIndex = 39;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pictureBoxMain
+            // 
+            this.pictureBoxMain.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxMain.BackgroundImage = global::LM2DBarcodeReader_New.Properties.Resources.Maint;
+            this.pictureBoxMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxMain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxMain.Location = new System.Drawing.Point(340, 45);
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxMain.TabIndex = 35;
+            this.pictureBoxMain.TabStop = false;
+            this.pictureBoxMain.Click += new System.EventHandler(this.btnMain_Click);
+            // 
+            // btnMaintnance
+            // 
+            this.btnMaintnance.BackColor = System.Drawing.Color.Transparent;
+            this.btnMaintnance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMaintnance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaintnance.FlatAppearance.BorderSize = 0;
+            this.btnMaintnance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMaintnance.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaintnance.ForeColor = System.Drawing.Color.White;
+            this.btnMaintnance.Location = new System.Drawing.Point(381, 45);
+            this.btnMaintnance.Name = "btnMaintnance";
+            this.btnMaintnance.Size = new System.Drawing.Size(111, 42);
+            this.btnMaintnance.TabIndex = 33;
+            this.btnMaintnance.Text = "Process";
+            this.btnMaintnance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMaintnance.UseVisualStyleBackColor = false;
+            this.btnMaintnance.Click += new System.EventHandler(this.btnMain_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(1003, 45);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(111, 42);
+            this.btnExit.TabIndex = 31;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(1194, 100);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(86, 824);
+            this.panel7.TabIndex = 40;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(86, 824);
+            this.panel8.TabIndex = 41;
+            // 
+            // Tray_Icon
+            // 
+            this.Tray_Icon.Icon = ((System.Drawing.Icon)(resources.GetObject("Tray_Icon.Icon")));
+            this.Tray_Icon.Text = "PCB Lid 2D Barcode reader";
+            this.Tray_Icon.Visible = true;
+            this.Tray_Icon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Tray_Icon_MouseDoubleClick);
+            // 
+            // context_TrayIcon
+            // 
+            this.context_TrayIcon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.context_TrayIcon.Name = "context_TrayIcon";
+            this.context_TrayIcon.Size = new System.Drawing.Size(105, 48);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.showToolStripMenuItem.Text = "Show";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 100);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(22, 824);
+            this.panel6.TabIndex = 39;
             // 
             // MainForm
             // 
@@ -479,19 +480,19 @@ namespace LM2DBarcodeReader_New
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserGuide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEventLog)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.context_TrayIcon.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLotValidation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfigure)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserGuide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEventLog)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.context_TrayIcon.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
